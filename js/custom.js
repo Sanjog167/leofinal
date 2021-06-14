@@ -90,23 +90,22 @@
     var scroll = $(window).scrollTop();
     if (scroll < 10) {
       $(".stickprice").removeClass("sticky");
-	}
+    }
   });
 
   $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
     if (scroll > 1400) {
       $(".stickprice").hide();
-	}
+    }
   });
 
   $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
     if (scroll < 1400) {
       $(".stickprice").show();
-	}
+    }
   });
-
 
   $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
@@ -117,10 +116,36 @@
     }
   });
 
-//   $(window).on("scroll", function () {
-//     var scroll = $(window).scrollTop();
-//     if (scroll > 800) {
-//       $(".stickprice").removeClass("sticky");
-//     }
-//   });
+  //   $(window).on("scroll", function () {
+  //     var scroll = $(window).scrollTop();
+  //     if (scroll > 800) {
+  //       $(".stickprice").removeClass("sticky");
+  //     }
+  //   });
 })(jQuery);
+
+$("#submit").click(function () {
+  var name = $("#firstName").val();
+  var email = $("#email").val();
+  var company = $("#compname").val();
+  var phone = $("#phone").val();
+
+  if (name == "" || email == "" || company == "" || phone == "") {
+    swal({
+      title: "Fields Empty!",
+      text: "Please check the missing fields!",
+      icon: "warning"
+    });
+  } else {
+    $(".modal").addClass("hide");
+    swal({
+      title: "That’s great!",
+      text: "Thank you for the information. Welcome aboard, we will be right there with you in a moment!",
+      icon: "success"
+    });
+    $("#firstName").val("");
+    $("#email").val("");
+    $("#compname").val("");
+    $("#phone").val("");
+  }
+});
