@@ -1,0 +1,122 @@
+body,html {
+	width:100%;
+	margin:0;
+	font-family: 'Arial', sans-serif;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+#container {width:450px; margin: 50px auto;}
+
+.jwg_slider_module {
+	min-height:320px;
+}
+.jwg_slider_module,
+.jwg_slider_module .arrow_navigation,
+.jwg_slider_module .tabbed_navigation {
+	overflow:hidden;
+	position:relative;
+	width: 100%;
+}
+.jwg_slider_module .tabbed_navigation > ul {
+	margin:0 auto;
+	text-align:center;
+}
+.jwg_slider_module .tabbed_navigation > ul:after {
+	content:"";
+	clear:both;	
+	display:block;
+}
+.jwg_slider_module .tabbed_navigation > ul li {
+	overflow:hidden;
+	position:relative;
+	display:inline;
+	display:inline-block;
+	cursor:pointer;
+	margin: 0 10px;
+	opacity:0.5;
+	transition : opacity .5s;
+	-o-transition : opacity .5s;
+	-ms-transition : opacity .5s;
+	-moz-transition : opacity .5s;
+	-webkit-transition : opacity .5s;
+}
+.jwg_slider_module .tabbed_navigation > ul li.current,
+.jwg_slider_module .tabbed_navigation > ul li:hover  {
+	opacity:1;
+}
+
+.jwg_slider_module .tabbed_navigation > ul.5_col li {
+	width:16%;
+}
+.jwg_slider_module .arrow_navigation {width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+	z-index: auto;
+}
+.jwg_slider_module .arrow_navigation > div {
+	position: relative;
+	z-index: 20; 
+	opacity : 0;
+	transition : opacity .5s;
+	-o-transition : opacity .5s;
+	-ms-transition : opacity .5s;
+	-moz-transition : opacity .5s;
+	-webkit-transition : opacity .5s;
+	width:auto;
+	height: 75px;
+	cursor: pointer;
+	top: 38%; 
+	background : #FFF;
+	padding : 10px;
+	left: auto;
+} 
+.jwg_slider_module .arrow_navigation.on > div {
+	opacity : 0.6;
+}
+.jwg_slider_module .arrow_navigation > div:hover {
+	opacity : 1;
+}
+.jwg_slider_module .arrow_navigation > div > p {
+	font-size: 20px;
+	position: relative;
+	line-height: 45px;
+}
+.touch .jwg_slider_module .arrow_navigation > div {
+	padding: 20px;
+	width : 30px;
+}
+.touch .jwg_slider_module .arrow_navigation > div > p {
+	font-size: 25px;
+}
+.jwg_slider_module .arrow_navigation > div.left {
+	padding-right : 20px; 
+	border-radius : 0 50px 50px 0;
+}
+.jwg_slider_module .arrow_navigation > div.right {
+	padding-left : 20px; 
+	border-radius : 50px 0 0 50px;
+}  
+.jwg_slider_module .slides {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:100%;
+}
+.jwg_slider_module .slides > .slide {
+	float:left;
+	width:100%;
+	height:inherit;
+	text-align:center;
+	background:#1abc9c;
+}
+.jwg_slider_module .tabbed_navigation {
+	position: absolute;
+	bottom: 0;
+	left:0;
+} 
