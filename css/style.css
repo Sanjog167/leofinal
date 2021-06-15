@@ -8164,3 +8164,16 @@ h5{
 .whites .hiddenbtn2{
   display: block!important;
 }
+
+@media(max-width:400px){
+  .foot1{
+    text-align: center;
+  }
+}
+
+@media(max-width:600px){
+  .faq_quest h5 {
+    color: black;
+    font-size: 16px!important;
+}
+}
