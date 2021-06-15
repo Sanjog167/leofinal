@@ -8013,3 +8013,42 @@ h5{
     margin: 4rem auto;
 }
 }
+
+
+
+@media(max-width:600px){
+  .trust_images{
+    display: none;
+  }
+
+  .trusted_by{
+    display: none;
+  }
+
+  .new_trust_images{
+    display: block;
+  }
+
+  .new_trusted_by{
+    display: block;
+  }
+
+
+}
+
+.new_trust_images img {
+  width: 70px;
+  margin: auto;
+}
+
+.new_trust_images{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.new_trusted_by p{
+  font-weight: 600!important;
+  color: black!important;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
