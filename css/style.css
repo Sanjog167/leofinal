@@ -7343,9 +7343,7 @@ textarea{
   width: 100%;
 }
 
-.tabSwiper{
-  height: 700px;
-}
+
 
 .confusedsection .banner_right{
   display: block;
@@ -7780,4 +7778,238 @@ h5{
 
 .magicbanner h3{
   text-align: center;
+}
+
+@media(max-width:768px){
+  .toggle{
+    display: block;
+  }
+}
+
+.headersmalldevice{
+  display: none;
+}
+
+
+@media(max-width:768px){
+  .toggle{
+    display: block;
+  }
+
+  .header-default{
+    display: none;
+  }
+  
+.headersmalldevice{
+  display: block;
+}
+
+.logotext{
+  display: block;
+}
+.betalogo{
+  display: block;
+}
+.headbutton1 div:nth-child(1) {
+  display: block;
+}
+}
+
+.smallmidheader img{
+  width: 120px;
+}
+
+@media(max-width:768px){
+  .navbar.sticky .askleobutton {
+    transform: unset;
+  }
+}
+
+
+.body-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1010;
+  left: 0;
+  opacity: 0;
+  display: none;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.body-overlay.active {
+  opacity: 1;
+  display: block;
+}
+
+.side-mobile-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.side-mobile-menu ul li a {
+  padding: 13px 0;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.side-mobile-menu ul li a:hover {
+  color: #f15b43;
+  padding-left: 5px;
+}
+.side-mobile-menu ul li a[aria-expanded="true"] {
+  color: #f15b43;
+}
+.side-mobile-menu ul li a[aria-expanded="true"]:before {
+  background: #f15b43;
+  border-color: #f15b43;
+}
+.side-mobile-menu ul li ul {
+  padding-left: 0;
+  list-style: none;
+}
+.side-mobile-menu ul li ul li {
+  padding-left: 15px;
+}
+.side-mobile-menu ul li ul li:hover > a {
+  color: #f15b43;
+  padding-left: 20px;
+}
+.side-mobile-menu ul li ul li:hover > a:before {
+  background: #f15b43;
+  border-color: #f15b43;
+}
+.side-mobile-menu ul li ul li a {
+  position: relative;
+  padding-left: 15px;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.side-mobile-menu ul li ul li a:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.side-mobile-menu ul li ul li a[aria-expanded="true"] {
+  padding-left: 20px;
+}
+.side-mobile-menu ul li.has-dropdown > a:after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-width: 2px 0 0 2px;
+  border-style: solid;
+  border-color: initial;
+  right: 16px;
+  top: 50%;
+  -webkit-transform: rotate(-45deg) translateY(-50%);
+  transform: rotate(-45deg) translateY(-50%);
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  transition: all 0.3s ease-out;
+}
+.side-mobile-menu ul li.has-dropdown a[aria-expanded="true"]:after {
+  -webkit-transform: rotate(-135deg) translateY(-50%);
+  transform: rotate(-135deg) translateY(-50%);
+}
+
+.slide-bar {
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  right: -370px;
+  width: 350px;
+  padding: 25px 30px;
+  height: 100%;
+  display: block;
+  background-color: #001234;
+  z-index: 1020;
+  -webkit-transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .slide-bar {
+    width: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .slide-bar {
+    width: 310px;
+    padding: 25px 20px;
+  }
+}
+
+.slide-bar.show {
+  right: 0;
+}
+
+.headersmalldevice.index{
+  z-index: 9;
+}
+
+.hiddenbtn1 button{
+  display: none;
+}
+
+@media(max-width:767px){
+  .asktheleo button{
+    display: none;
+  }
+  .hiddenbtn1 button{
+    display: block!important;
+    text-align: center;
+    margin: auto;
+  }
+
+}
+
+.hiddenbtn2 button{
+  display: none;
+}
+
+.hiddenbtn2 button img{
+  width: 18px;
+  margin-right: 10px;
+}
+
+@media(max-width:767px){
+  .get_the_start button{
+    display: none;
+  }
+  .hiddenbtn2 button{
+    display: block!important;
+    text-align: center;
+    margin: auto;
+  }
+
+  .confusedsection .second_section_button button{
+    margin: auto;
+  }
+
+}
+
+@media(max-width:992px){
+  .responsive {
+    position: relative;
+    margin: 4rem auto;
+}
 }

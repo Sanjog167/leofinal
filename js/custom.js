@@ -149,3 +149,29 @@ $("#submit").click(function () {
     $("#phone").val("");
   }
 });
+
+$(".hamburger-menu").on("click", function (e) {
+  e.preventDefault();
+  $(".slide-bar").toggleClass("show");
+  $("body").addClass("on-side");
+  $(".body-overlay").addClass("active");
+  $(".headersmalldevice").addClass("index");
+  $(this).addClass("active");
+});
+
+$(".close-mobile-menu > a").on("click", function (e) {
+  e.preventDefault();
+  $(".slide-bar").removeClass("show");
+  $("body").removeClass("on-side");
+  $(".body-overlay").removeClass("active");
+  $(".hamburger-menu > a").removeClass("active");
+});
+
+$(".body-overlay").on("click", function () {
+  $(this).removeClass("active");
+  $(".slide-bar").removeClass("show");
+  $("body").removeClass("on-side");
+  $(".hamburger-menu").removeClass("active");
+  $(".toggle").removeClass("open");
+  // $(".headersmalldevice").removeClass("index");
+});
