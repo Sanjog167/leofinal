@@ -4955,7 +4955,7 @@ a:hover {
 
 .media_banner {
   position: relative;
-  height: 90vh;
+  /* height: 90vh; */
 }
 
 .clip_path {
@@ -5600,7 +5600,7 @@ margin-bottom: 5rem;
 
 .media_banner{
   position: absolute;
-  top: 5%;
+  top: 13%;
 }
 
 .use_case_third_section{
@@ -6084,7 +6084,7 @@ margin-bottom: 5rem;
 
 .newfeaturebannerhere{
   position: inherit;
-  height: 85vh;
+  /* height: 85vh; */
 }
 
 .feature_stick{
@@ -7557,7 +7557,7 @@ h5{
   position: sticky;
   top:8%;
   height: 100%;
-  z-index: 99999;
+  z-index: 999;
   text-align: center;
   border-bottom: 1px solid lightgray;
   padding-top: 40px;
@@ -7791,7 +7791,7 @@ h5{
 }
 
 
-@media(max-width:768px){
+@media(max-width:1100px){
   .toggle{
     display: block;
   }
@@ -8018,8 +8018,8 @@ h5{
   display: none;
 }
 
-.new_trusted_by{
-  display: none;
+.new_trust_images{
+  display: none!important;
 }
 
 
@@ -8034,7 +8034,7 @@ h5{
   }
 
   .new_trust_images{
-    display: block;
+    display: block!important;
   }
 
   .new_trusted_by{
@@ -8067,9 +8067,100 @@ h5{
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 700px){
 .tab_title_with_content p {
     font-size: 13px;
-    margin-bottom: 20px;
+    margin-bottom: 20px!important;
 }
+}
+
+
+
+@media(min-width:1400px){
+  .midheader{
+    margin: auto!important;
+  }
+}
+
+.feature_input input{
+  background-color: white!important;
+}
+
+.nayamediabanner .banner_right{
+  display: block;
+}
+
+@media(max-width:1100px){
+  .nayamediabanner{
+    position: initial;
+    background-color: #f6f8ff;
+    padding-top: 50px;
+  }
+  .cp1{
+    height: initial;
+  }
+}
+
+@media(max-width:767px){
+  .newleohere{
+    padding-top: initial!important;
+  }
+  .newleohere h3 {
+    width: initial;
+    margin: auto;
+}
+.newleohere .physicalworkplace p {
+  text-align: center;
+  margin: auto;
+  width: initial;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.newleohere .media_one button {
+  border: none;
+  color: white;
+  background: #ed4041 0% 0% no-repeat padding-box;
+  box-shadow: 2px 2px 15px #ed40417a;
+  border-radius: 5px;
+  font-size: 17px;
+  outline-width: 0;
+  font-weight: 500;
+  width: 60%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 22px;
+}
+}
+
+@media(max-width:992px){
+  .usecasespage .row {
+    margin-left: initial!important;
+    margin-right: initial!important;
+}
+}
+
+@media(max-width:809px){
+  .anotherusecase .media_button button{
+    width: 50%!important;
+  }
+}
+
+
+
+@media(max-width:992px){
+  .whites{
+    padding-top: 50px;
+  }
+  
+  .anwhites{
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+}
+
+.whites .hiddenbtn2{
+  display: block!important;
 }
