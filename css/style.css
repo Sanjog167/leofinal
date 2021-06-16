@@ -8842,8 +8842,28 @@ textarea {
 }
 
 .price_realprice span {
-  font-size: 28px;
+  font-size: 20px;
   position: absolute;
-  top: 6px;
-  left: -58px;
+  top: -15px;
+  left: -10px;
+}
+
+.price_realprice h5{
+  margin-bottom: 20px;
+}
+
+.price_ribbon {
+  position: absolute;
+  top: 18px;
+  right: -34px;
+  background: red;
+  width: 56%;
+  text-align: center;
+  box-shadow: 2px 2px 15px #ed40417a;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  transform: rotate(
+45deg
+);
 }
