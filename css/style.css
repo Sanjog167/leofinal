@@ -7952,7 +7952,7 @@ textarea {
   padding: 25px 30px;
   height: 100%;
   display: block;
-  background-color: #001234;
+  background-color: #545454;
   z-index: 1020;
   -webkit-transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -moz-transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -8648,3 +8648,147 @@ textarea {
   }
   
 }
+
+.feature_management_section_starts img{
+  height: 200px;
+}
+
+@media(max-width:768px){
+  .itsection{
+    display: block;
+  }
+}
+
+.pricing_title_goes_here h5{
+  color: black;
+  font-size: 20px;
+}
+
+.lastalterpage{
+  height: 90vh;
+}
+
+@media(max-width:768px){
+  .lastalterpage {
+    height: inherit;
+}
+.complete_package p {
+  width: 100%;
+}
+}
+
+.alternative_comparison .complete_package p{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.alternative_comparison h3{
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+
+@media(max-width:768px){
+  .lastalterpage {
+    height: inherit;
+}
+.complete_package p {
+  width: 100%;
+}
+.alternative_comparison .complete_package p{
+  width: 100%;
+}
+}
+
+@media (max-width: 600px){
+.alterwidth {
+    width: 50%!important;
+    color: black;
+    /* font-size: 14px !important; */
+    padding-left: 20px !important;
+}
+}
+
+.footer_content a{
+  transition: 200ms ease-out;
+}
+
+.footer_content a:hover{
+  transform: translateX(-5px);
+}
+
+.latestftr .featurelaptopimage {
+  position: absolute;
+  top: 24.5%!important;
+  left: 3%;
+  transform: initial;
+}
+
+@media(max-width:769px){
+  .latestftr .hiddenbutton{
+    margin: 50px;
+  }
+  .latestftr .featuredot {
+    position: absolute;
+    top: -2%;
+    left: 0;
+}
+.latestftr .featurelaptopimage {
+  position: absolute;
+  top: 16%!important;
+  left: 3%;
+  transform: initial;
+}
+
+.latestftr .featurelaptopimage img{
+  width: 49%;
+}
+}
+
+.latestusec .featurelaptopimage img{
+  width: 50%;
+}
+
+.latestusec .featurelaptopimage{
+  position: absolute;
+  top: 20%;
+}
+
+.latestusec .laptop{
+  margin-top: -10px;
+}
+
+@media(max-width:769px){
+  .latestusec .featurelaptopimage{
+    position: absolute;
+    top: 16%;
+  } 
+}
+
+
+
+.hiddenusecaserow{
+  display: none;
+}
+
+@media(max-width:767px){
+  .firstcolumn{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .itrow{
+    display: none;
+  }
+  
+.hiddenusecaserow{
+  display: block;
+}
+}
+
+/* .anwhites .banner_right{
+  display: block;
+} */
