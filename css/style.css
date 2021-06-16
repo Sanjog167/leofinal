@@ -8609,3 +8609,42 @@ textarea {
     padding-bottom: 40px;
   }
 }
+
+.confusedsection .tab_title_with_content{
+  margin-top: -50px;
+}
+
+.leocustom_inside img{
+  width: 100%;
+}
+
+.right_image img{
+  margin-left: -60px;
+}
+
+@media(max-width:768px){
+  .right_image img{
+    margin-left: inherit;
+  }
+  
+}
+
+.complete_package p{
+  width: 90%;
+}
+
+.confusedsection .tab_title_with_content p {
+  width: 90%;
+}
+
+.recognizebusiness p{
+  width: 90%;
+}
+
+
+@media(max-width:768px){
+  .confusedsection .tab_title_with_content{
+    margin-top: inherit;
+  }
+  
+}
