@@ -4226,6 +4226,17 @@ body.down .navbar .fa-bars {
   background-color: #ed4041;
 }
 
+#basiceroundone{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ed4041;
+  transition: 200ms ease-out;
+}
+
 #hiddentoggleroundone.leftright {
   position: absolute;
   top: 0;
@@ -4234,6 +4245,10 @@ body.down .navbar .fa-bars {
   height: 20px;
   border-radius: 50%;
   background-color: #ed4041;
+}
+
+#basiceroundone.leftright{
+ display: none;
 }
 
 .antoggle.colorchange {
@@ -8866,4 +8881,40 @@ textarea {
   transform: rotate(
 45deg
 );
+}
+
+@media(max-width:1100px) and (min-width:992px){
+  .price_ribbon {
+    position: absolute;
+    top: 10px;
+    right: -29px;
+    background: red;
+    width: 56%;
+    text-align: center;
+    box-shadow: 2px 2px 15px #ed40417a;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transform: rotate( 
+45deg
+ );
+}
+}
+
+@media(max-width:768px){
+  .price_ribbon {
+    position: absolute;
+    top: 33px;
+    right: -52px;
+    background: red;
+    width: 56%;
+    text-align: center;
+    box-shadow: 2px 2px 15px #ed40417a;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transform: rotate( 
+45deg
+ );
+}
 }

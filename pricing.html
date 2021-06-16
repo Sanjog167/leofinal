@@ -253,12 +253,22 @@
                         <h5>BASIC PLAN</h5>
                     </div>
                     <div class="price_realprice">
-                      <h5><span>NPR</span>10,000</h5>
+                      <h5 class="pricingprice" id="basepriceone"><span>NPR</span>10,000</h5>
+                      <h5 class="hiddenprice" id="basepricetwo"><span>NPR</span>1,00,000</h5>
                       <p style="font-weight: bold;">15 Users | Storage 50GB</p>
                   </div>
-                    <div class="price_image">
-                        <img src="img/pricing-free.png">
+                  <div class="price_toggle">
+                    <div class="month_toggle">
+                        <p class="montoggle" id="basemonthone">Monthly</p>
                     </div>
+                    <div class="toggleswitches" id="basetoggleone">
+                        <div class="toggle_round" id="baseroundone"></div>
+                    </div>
+                      <div class="annual_toggle">
+                        <p class="antoggle" id="basemonthtwo">Anually</p>
+                    </div>
+                      
+                </div>
                     <div class="pricing_lists">
                       <div class="pricinglist1">
                           <p><span>Multiple</span> Dashboard</p>
@@ -519,12 +529,22 @@
                         <h5>BASIC PLAN</h5>
                     </div>
                     <div class="price_realprice">
-                      <h5><span>NPR</span>10,000</h5>
+                      <h5 class="pricingprice" id="newbasepriceone"><span>NPR</span>10,000</h5>
+                      <h5 class="hiddenprice" id="newbasepricetwo"><span>NPR</span>1,00,000</h5>
                       <p style="font-weight: bold;">15 Users | Storage 50GB</p>
                   </div>
-                    <div class="price_image">
-                        <img src="img/pricing-free.png">
+                  <div class="price_toggle">
+                    <div class="month_toggle">
+                        <p class="montoggle" id="newbasemonthone">Monthly</p>
                     </div>
+                    <div class="toggleswitches" id="newbasetoggleone">
+                        <div class="toggle_round" id="newbaseroundone"></div>
+                    </div>
+                      <div class="annual_toggle">
+                        <p class="antoggle" id="newbasemonthtwo">Anually</p>
+                    </div>
+                      
+                </div>
                     <div class="pricing_lists">
                       <div class="pricinglist1">
                           <p><span>Multiple</span> Dashboard</p>
@@ -566,20 +586,20 @@
                         <h5>ADVANCED</h5>
                     </div>
                     <div class="price_realprice">
-                        <h5 class="pricingprice" id="pricingpricesecond"><span>NPR</span>15,000</h5>
-                        <h5 class="hiddenprice" id="hiddenpricetwo"><span>NPR</span>1,50,000</h5>
+                        <h5 class="pricingprice" id="advancedpriceone"><span>NPR</span>15,000</h5>
+                        <h5 class="hiddenprice" id="advancedpricetwo"><span>NPR</span>1,50,000</h5>
                         <p style="font-weight: bold;">25 Users | Storage 100GB</p>
                     </div>
 
                     <div class="price_toggle">
                         <div class="month_toggle">
-                            <p class="montoggle" id="montogglesecond">Monthly</p>
+                            <p class="montoggle" id="advancedmonthone">Monthly</p>
                         </div>
-                        <div class="toggleswitches" id="pricetogglesecond">
-                            <div class="toggle_round" id="toggleroundtwo"></div>
+                        <div class="toggleswitches" id="advancedtoggleone">
+                            <div class="toggle_round" id="advancedtoggletwo"></div>
                         </div>
                           <div class="annual_toggle">
-                            <p class="antoggle" id="antoggletwo">Anually</p>
+                            <p class="antoggle" id="advancedmonthtwo">Anually</p>
                         </div>
                           
                     </div>
@@ -680,7 +700,6 @@
                   </div>
               </div>
                 </div>
-
                 <div class="swiper-slide">
                   <div class="price1 price4">
                     <div class="price_span">
@@ -1319,6 +1338,35 @@
 });
 </script>
 
+<script>
+  $("#advancedtoggleone").click(function () {
+   $("#advancedtoggletwo").toggleClass("leftright");
+   $("#advancedpriceone").toggleClass("hidetheprice");
+  $("#advancedpricetwo").toggleClass("showtheprice");
+  $("#advancedmonthtwo").toggleClass("nextcolorchange");
+  $("#advancedmonthtwo").toggleClass("colorchange");
+});
+</script>
+
+<script>
+  $("#basetoggleone").click(function () {
+   $("#baseroundone").toggleClass("leftright");
+   $("#basepriceone").toggleClass("hidetheprice");
+  $("#basepricetwo").toggleClass("showtheprice");
+  $("#basemonthone").toggleClass("nextcolorchange");
+  $("#basemonthtwo").toggleClass("colorchange");
+});
+</script>
+
+<script>
+  $("#newbasetoggleone").click(function () {
+   $("#newbaseroundone").toggleClass("leftright");
+   $("#newbasepriceone").toggleClass("hidetheprice");
+  $("#newbasepricetwo").toggleClass("showtheprice");
+  $("#newbasemonthone").toggleClass("nextcolorchange");
+  $("#newbasemonthtwo").toggleClass("colorchange");
+});
+</script>
 
 
 
