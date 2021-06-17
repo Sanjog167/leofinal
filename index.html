@@ -2011,7 +2011,7 @@
                   </div>
                   <div class="getstarted more_reason asktheleo">
                     <a href="pricing.html">
-                      <button>Ask<span>Leo !</span></button>
+                      <button>Learn More</button>
                     </a>
                   </div>
                 </div>
@@ -2245,7 +2245,7 @@
           <div class="leocustom_body">
             <img src="img/long.png" class="maincustom" />
             <div class="leocustom_inside">
-              <img src="img/customizeable.svg" />
+              <img src="img/newcustom.png" />
             </div>
           </div>
         </div>
@@ -2294,10 +2294,12 @@
                 <img src="img/newimage4.png">
               </div>
               <div class="getstarted operateme hiddenbtn2">
+                <a href="whitelabel.html">
                 <button>
                   <img src="img/right-arrow.svg" />
                   Get Started
                 </button>
+                </a>
               </div>
             </div>
           </div>
@@ -2458,9 +2460,9 @@
           </div>
           <div class="realfooter">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-lg-6">
                 <div class="row">
-                  <div class="col-lg-6">
+                  <div class="col-lg-4">
                     <div class="realfooterhead">
                       <h5><span>Company</span></h5>
                     </div>
@@ -2471,7 +2473,18 @@
                       <a>Contact</a>
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-4">
+                    <div class="realfooterhead">
+                      <h5><span>Legal</span></h5>
+                    </div>
+                    <div class="footer_content">
+                      <a>About LeoSquad</a>
+                      <a>About Analogue Inc</a>
+                      <a href="media.html">Press & Media</a>
+                      <a>Contact</a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
                     <div class="realfooterhead">
                       <h5><span>Quick Links</span></h5>
                     </div>
@@ -2486,7 +2499,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-8">
+              <div class="col-lg-6">
                 <div class="row">
                   <div class="col-lg-4">
                     <div class="realfooterhead">
@@ -2836,7 +2849,25 @@
       var swiper = new Swiper(".tabSwiper", {
         pagination: {
           el: ".swiper-pagination"
-        }
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+        },
       });
     </script>
 

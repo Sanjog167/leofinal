@@ -8918,3 +8918,40 @@ textarea {
  );
 }
 }
+
+.indexmacimg{
+  animation: scaleNew 1s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@keyframes scaleNew{
+  0%{
+    transform:scale(2);
+  }
+  100%{
+    transform:scale(1);
+    opacity: 1;
+  }
+}
+
+.physcialworld{
+  animation: scaleNew 1s forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+.virtualworld{
+  animation: scaleNew 1s forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+.clickme2{
+  margin-top: 20px;
+}
+
+.hiddenmagicbanner .realmac {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
