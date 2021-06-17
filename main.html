@@ -305,7 +305,7 @@
             >
               <img src="img/hero_laptop.png" />
               <div class="rightbutton">
-                <div class="getstarted operateme mainbutton macbutton">
+                <div class="getstarted operateme mainbutton macbutton mainmacbtn">
                   <a href="https://leosquad.com/signup" target="_blank">
                     <button>
                       <img src="img/right-arrow.svg" />
@@ -1673,7 +1673,7 @@
               <div
                 class="col-lg-4"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="100" data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 <div class="responsive responsive1">
@@ -1694,7 +1694,7 @@
               <div
                 class="col-lg-4"
                 data-aos="fade-up"
-                data-aos-delay="200"
+                data-aos-delay="200" data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 <div class="responsive responsive2">
@@ -1715,7 +1715,7 @@
               <div
                 class="col-lg-4"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="300" data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 <div class="responsive responsive3">
@@ -1737,7 +1737,7 @@
               <div
                 class="col-lg-4"
                 data-aos="fade-up"
-                data-aos-delay="400"
+                data-aos-delay="400" data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 <div class="responsive responsive4">
@@ -1760,7 +1760,7 @@
               <div
                 class="col-lg-4"
                 data-aos="fade-up"
-                data-aos-delay="500"
+                data-aos-delay="500" data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 <div class="responsive responsive5">
@@ -1781,7 +1781,7 @@
               </div>
               <div
                 class="col-lg-4"
-                data-aos="fade-up"
+                data-aos="fade-up" data-aos-duration="1000"
                 data-aos-delay="600"
                 data-aos-offset="0"
               >
@@ -2768,6 +2768,9 @@
           </div>
         </div>
       </div>
+      <div class='scrolltop float-right'>
+        <img src="img/up-arrow (1).svg" onclick='topFunction()' id='mybtn'></i>
+    </div>
     </div>
 
     <div
@@ -2957,6 +2960,27 @@
       });
     </script>
 
+<script>
+  $(document).ready(function(){
+       
+       $(window).scroll(function(){
+         if($(this).scrollTop() > 200){
+           $('#mybtn').fadeIn();
+         }
+         else{
+           $('#mybtn').fadeOut();
+         }
+       });
+     
+     
+         $('#mybtn').click(function(){
+               $('html,body').animate({scrollTop: 0}, 1000)
+     
+         })
+     
+     }); 
+</script>
+
     <!-- <script type="text/javascript">
     gsap.timeline({
       scrollTrigger: {
@@ -2979,21 +3003,6 @@
   
   </script> -->
 
-    <script>
-      $(document).ready(function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 200) {
-            $("#mybtn").fadeIn();
-          } else {
-            $("#mybtn").fadeOut();
-          }
-        });
-
-        $("#mybtn").click(function () {
-          $("html,body").animate({ scrollTop: 0 }, 1000);
-        });
-      });
-    </script>
 
     <script>
       $(".preloader").delay(5000).fadeOut("slow");

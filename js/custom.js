@@ -116,6 +116,19 @@
     }
   });
 
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+    if (scroll <10 ) {
+      $(".maincompare").removeClass("sticked");
+    }
+  });
+
+  $('[data-aos]').parent().addClass('hideOverflowOnMobile');
+
+
+
+  
+
   //   $(window).on("scroll", function () {
   //     var scroll = $(window).scrollTop();
   //     if (scroll > 800) {

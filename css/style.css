@@ -4499,9 +4499,11 @@ body.down .navbar .fa-bars {
   margin-top: 60px;
 }
 
-/* .maincompare.sticked{
-  margin-top: 450px;
-} */
+
+
+.maincompare.sticked{
+  margin-top: 400px;
+}
 
 /* .fourcompare.sticky .compare_para{
   display: none;
@@ -9713,3 +9715,58 @@ textarea.input1 + .shadow-input1 {
     height: initial;
   }
 }
+
+@media(max-width:768px){
+  .mainmacbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#mybtn {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  border: none;
+  color: white;
+  background-color: var(--redcolor);
+  padding: 10px;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.scrolltop img{
+  width: 50px;
+}
+
+
+#mybtn:hover{
+  transform: translateY(-10px);
+  transition: 200ms ease-out;
+}
+
+@media(max-width:768px){
+  .join100 {
+    color: black;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+}
+
+@media (max-width: 768px) {
+  .hideOverflowOnMobile {
+  overflow: hidden;
+  }
+  }
+
+  @media(max-width:768px){
+    body{
+      overflow-x: hidden;
+    }
+  }
