@@ -8959,7 +8959,8 @@ textarea {
 
 
 @media(max-width:600px){
-  .magicbanner{
+  .hiddenmagicbanner{
     overflow-y: hidden!important;
     height: 100vh;
   }
+}
