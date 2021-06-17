@@ -8956,6 +8956,10 @@ textarea {
   margin-bottom: 20px;
 }
 
-.magicbanner{
-  overflow-y: hidden;
-}
+
+
+@media(max-width:600px){
+  .magicbanner{
+    overflow-y: hidden!important;
+    height: 100vh;
+  }
