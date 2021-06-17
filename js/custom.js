@@ -95,14 +95,14 @@
 
   $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
-    if (scroll > 1400) {
+    if (scroll > 5200) {
       $(".stickprice").hide();
     }
   });
 
   $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
-    if (scroll < 1400) {
+    if (scroll < 5200) {
       $(".stickprice").show();
     }
   });
