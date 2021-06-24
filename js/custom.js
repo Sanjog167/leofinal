@@ -79,6 +79,41 @@
       $(".navbar").addClass("sticky");
     }
   });
+
+  
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 1600) {
+      $("#nbnext").addClass("indexz");
+    }
+  });
+
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 1800) {
+      $("#nbnext").removeClass("indexz");
+    }
+  });
+
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 3000) {
+      $("#nbnext").removeClass("indexz");
+    }
+  });
+
+
+
+
+
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 10) {
+      $(".compheaddefault").removeClass("newsticky");
+    } else {
+      $(".compheaddefault").addClass("newsticky");
+    }
+  });
   $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
@@ -160,6 +195,103 @@ $("#submit").click(function () {
     $("#email").val("");
     $("#compname").val("");
     $("#phone").val("");
+  }
+});
+
+
+$("#partnersubmit1").click(function () {
+  var name = $("#PfName").val();
+  var email = $("#Pemail").val();
+  var company = $("#Pcompname").val();
+  var phone = $("#Pphone").val();
+  var monthly = $("#Pmonthly").val();
+  var target = $("#Ptarget").val();
+  
+  
+
+  if (name == "" || email == "" || phone == "" || monthly == "" || target == "" ) {
+    swal({
+      title: "Fields Empty!",
+      text: "Please check the missing fields!",
+      icon: "warning"
+    });
+  } else {
+    $(".modal").addClass("hide");
+    swal({
+      title: "That’s great!",
+      text: "Thank you for showing interest on LeoSquad Referral Program. Our Representatives will get in touch shortly",
+      icon: "success"
+    });
+    $("#PfName").val("");
+    $("#Pemail").val("");
+    $("#Pcompname").val("");
+    $("#Pphone").val("");
+    $("#Pmonthly").val("");
+    $("#Ptarget").val("");
+  }
+});
+
+$("#partnersubmit2").click(function () {
+  var nameone = $("#newPfName").val();
+  var emailone = $("#newPemail").val();
+  var companyone = $("#newPcompname").val();
+  var phoneone = $("#newPphone").val();
+  var monthlyone = $("#newPmonthly").val();
+  var targetone = $("#newPtarget").val();
+  
+  
+
+  if (nameone == "" || emailone == "" || phoneone == "" || monthlyone == "" || targetone == "" ) {
+    swal({
+      title: "Fields Empty!",
+      text: "Please check the missing fields!",
+      icon: "warning"
+    });
+  } else {
+    $(".modal").addClass("hide");
+    swal({
+      title: "That’s great!",
+      text: "Thank you for showing interest on LeoSquad Affiliate Program. Our Representatives will get in touch shortly",
+      icon: "success"
+    });
+    $("#PfName").val("");
+    $("#Pemail").val("");
+    $("#Pcompname").val("");
+    $("#Pphone").val("");
+    $("#Pmonthly").val("");
+    $("#Ptarget").val("");
+  }
+});
+
+$("#partnersubmit3").click(function () {
+  var name = $("#resPfName").val();
+  var email = $("#resPemail").val();
+  var company = $("#resPcompname").val();
+  var phone = $("#resPphone").val();
+  var monthly = $("#resPmonthly").val();
+  var target = $("#resPtarget").val();
+  
+  
+
+  if (name == "" || email == "" || phone == "" || monthly == "" || target == "" ) {
+    swal({
+      title: "Fields Empty!",
+      text: "Please check the missing fields!",
+      icon: "warning"
+    });
+  } else {
+    $(".modal").addClass("hide");
+    swal({
+      title: "That’s great!",
+      text: "Thank you for showing interest on LeoSquad Reseller Program. Our Representatives will get in touch shortly",
+      icon: "success"
+    });
+    $("#PfName").val("");
+    $("#Pemail").val("");
+    $("#Pcompname").val("");
+    $("#Pphone").val("");
+    $("#Pmonthly").val("");
+    $("#Ptarget").val("");
   }
 });
 

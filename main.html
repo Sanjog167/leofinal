@@ -35,7 +35,388 @@
     />
     <link rel="stylesheet" type="text/css" href="sliders/basic.css" />
     <link rel="stylesheet" type="text/css" href="sliders/theme.css" />
+
   </head>
+
+  <style>
+    .section.section_templates_on-boards {
+      padding: 80px 0 45px
+    }
+
+    @media (max-width:768px) {
+      .section.section_templates_on-boards {
+        padding: 60px 0 30px
+      }
+    }
+
+    .section.section_templates_on-boards .section__header_wrapper {
+      -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+      align-items: baseline;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      margin: 0
+    }
+
+    .section.section_templates_on-boards .section__header-link_dashed>.wrap {
+      padding-left: 5px;
+      border-right: .08em solid #ed4041;
+    }
+
+    .section.section_templates_on-boards .section__header-link_dashed {
+      font: inherit;
+      padding-left: 5px;
+      border-bottom: 0;
+      cursor: unset;
+      min-width: 175px;
+      color: #ed4041;
+    }
+
+    @media (max-width:600px) {
+      .section.section_templates_on-boards .section__header-link_dashed {
+        font: 800 25px/45px Axiforma, Arial, serif;
+        display: block;
+        padding-left: 0
+      }
+    }
+
+    .section.section_templates_on-boards .section__header-link_dashed .wrap {
+      color: #ed4041;
+    }
+
+    .section.section_templates_on-boards .template__component {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    .section.section_templates_on-boards .template__component .btn {
+      width: 190px;
+      padding: 2px 20px 0;
+      max-width: 100%;
+      margin: 0 10px;
+      text-align: center;
+      outline: 0
+    }
+
+    @media screen and (max-width:380px) {
+      .section.section_templates_on-boards .template__component {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+      }
+
+      .section.section_templates_on-boards .template__component .btn {
+        margin: 0 10px 15px;
+        width: 170px;
+        padding: 2px 10px 0
+      }
+    }
+
+   
+
+    .slick-slider {
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -ms-touch-action: pan-y;
+      touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent
+    }
+
+    .slick-list {
+      position: relative;
+      overflow: hidden;
+      display: block;
+      margin: 0;
+      padding: 0;
+      outline: 0 !important
+    }
+
+    .slick-list:focus {
+      outline: 0 !important
+    }
+
+    .slick-list.dragging {
+      cursor: pointer
+    }
+
+    .slick-slider .slick-list,
+    .slick-slider .slick-track {
+      -webkit-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0)
+    }
+
+    .slick-track {
+      position: relative;
+      left: 0;
+      top: 0;
+      display: block
+    }
+
+    .slick-track:after,
+    .slick-track:before {
+      content: "";
+      display: table
+    }
+
+    .slick-track:after {
+      clear: both
+    }
+
+    .slick-loading .slick-track {
+      visibility: hidden
+    }
+
+    .slick-slide {
+      float: left;
+      height: 100%;
+      min-height: 1px;
+      outline: 0
+    }
+
+    .slick-slide:focus {
+      outline: 0
+    }
+
+    [dir=rtl] .slick-slide {
+      float: right
+    }
+
+    .slick-slide img {
+      display: block
+    }
+
+    @media (max-width:768px) {
+      .slick-slide img {
+        max-width: 100%
+      }
+    }
+
+    .slick-slide.slick-loading img {
+      display: none
+    }
+
+    .slick-slide.dragging img {
+      pointer-events: none
+    }
+
+    .slick-initialized .slick-slide {
+      display: block
+    }
+
+    .slick-loading .slick-slide {
+      visibility: hidden
+    }
+
+    .slick-vertical .slick-slide {
+      display: block;
+      height: auto;
+      border: 1px solid transparent
+    }
+
+    .slick-arrow.slick-hidden {
+      display: none
+    }
+
+   
+
+    .slick-next,
+    .slick-prev {
+      position: absolute;
+      display: block;
+      height: 100px;
+      width: 12px;
+      line-height: 0;
+      font-size: 0;
+      cursor: pointer;
+      background: 0 0;
+      color: transparent;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 0;
+      border: none;
+      outline: 0;
+      z-index: 100
+    }
+
+    .slick-next:focus,
+    .slick-next:hover,
+    .slick-prev:focus,
+    .slick-prev:hover {
+      outline: 0;
+      color: transparent
+    }
+
+    .slick-next.slick-disabled,
+    .slick-prev.slick-disabled {
+      opacity: .25;
+      cursor: default
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+      font-family: slick;
+      font-size: 20px;
+      line-height: 1;
+      color: #fff;
+      opacity: .75;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale
+    }
+
+    .slick-prev {
+      left: 5px;
+      background: url(landing/images/slick-prev.png) center/contain no-repeat transparent
+    }
+
+    [dir=rtl] .slick-prev {
+      left: auto;
+      right: -25px
+    }
+
+    .slick-next {
+      right: 5px;
+      background: url(landing/images/slick-next.png) center/contain no-repeat transparent
+    }
+
+    [dir=rtl] .slick-next {
+      left: -25px;
+      right: auto
+    }
+
+    .slick-dotted.slick-slider {
+      margin-top: 50px
+    }
+
+    .slick-dots {
+      position: absolute;
+      top: -35px;
+      list-style: none;
+      display: block;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      width: 100%
+    }
+
+    .slick-dots li {
+      position: relative;
+      display: inline-block;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer
+    }
+
+    .slick-dots li button {
+      border: 0;
+      background: 0 0;
+      display: block;
+      height: 8px;
+      width: 8px;
+      outline: 0;
+      line-height: 0;
+      font-size: 0;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer
+    }
+
+    .slick-dots li button:focus,
+    .slick-dots li button:hover {
+      outline: 0
+    }
+
+    .slick-dots li button:focus:before,
+    .slick-dots li button:hover:before {
+      opacity: 1
+    }
+
+    .slick-dots li button:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #5c4dbc
+    }
+
+    .slick-dots li.slick-active button:before {
+      background: #fff
+    }
+
+    .slider_multiple-assignees.slick-dotted.slick-slider {
+      margin-top: 20px
+    }
+
+    .slider_multiple-assignees .slick-dots {
+      top: -5px
+    }
+
+    .slider {
+      margin: 20px auto 0;
+      width: 860px;
+      max-width: 860px
+    }
+
+    @media (max-width:1200px) {
+      .slider {
+        width: 90%
+      }
+    }
+
+    .slider__item {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto
+    }
+
+    .slider-nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 30px 0 50px
+    }
+
+    .slider-nav__item {
+      width: 8px;
+      height: 8px;
+      margin: 0 5px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, .4)
+    }
+
+    .slider-nav__item_active {
+      background: #fff
+    }
+  </style>
+
+
+ 
 
   <body>
     <div class="wrapper">
@@ -97,7 +478,7 @@
       </aside>
       <div class="body-overlay"></div>
       <header class="header-default" style="background: #f8f8f8">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" id="nbnext">
           <div
             class="container"
             style="
@@ -1647,12 +2028,13 @@
         </div>
       </div>
 
-      <div class="black_bg" data-aos="fade-up">
-        <h3>
+      <div class="black_bg">
+        <h3 class="blackbg">
           An outstanding set of features bringing quality to your virtual
           workplace
         </h3>
       </div>
+      
 <!-- 
       <div class="white_bg" data-aos="fade-up">
         <h3>
@@ -2020,7 +2402,7 @@
                     <a href="alternative.html" target="_blank">
                       <button>
                         <img src="img/right-arrow.svg" />
-                        Get Started
+                        See Alternative
                       </button>
                     </a>
                   </div>
@@ -2144,7 +2526,7 @@
               </div>
               <div class="getstarted more_reason hiddenbtn1">
                 <a href="pricing.html" target="_blank">
-                  <button>Ask<span>Leo !</span></button>
+                  <button>See Pricing</button>
                 </a>
               </div>
             </div>
@@ -2166,7 +2548,7 @@
                   </div>
                   <div class="getstarted more_reason asktheleo">
                     <a href="pricing.html" target="_blank">
-                      <button>Learn More</button>
+                      <button>See Pricing</button>
                     </a>
                   </div>
                 </div>
@@ -2197,7 +2579,7 @@
                 </h3>
                 <div class="complete_package">
                   <p>Let's get a brief look at how it works for you.</p>
-                </div>
+                </div><br>
               </div>
               <div
                 class="nav flex-column nav-pills"
@@ -2228,7 +2610,7 @@
                 >
               </div>
 
-              <div class="second_section_button">
+              <div class="second_section_button" style="margin-top: 40px;">
                 <a href="usecase.html" target="_blank">
                   <button>Learn More</button>
                 </a>
@@ -2448,7 +2830,7 @@
                     <a href="whitelabel.html" target="_blank">
                       <button>
                         <img src="img/right-arrow.svg" />
-                        Learn More
+                        Explore White Label
                       </button>
                     </a>
                   </div>
@@ -2463,7 +2845,7 @@
                 <a href="whitelabel.html" target="_blank">
                   <button>
                     <img src="img/right-arrow.svg" />
-                    Get Started
+                    Explore White Label
                   </button>
                 </a>
               </div>
@@ -2542,6 +2924,117 @@
           />
         </div>
       </div>
+
+
+      <div class="slickboard">
+        <div class="container">
+          <div class="section section-v2 section_templates_on-boards">
+            <div class="wrapper section__wrapper" style="text-align: center;">
+                <div class="section__header_wrapper">
+                    <h2 class="section-v2__header section-v2__header_v2 section-v2__header_main">
+                      LeoSquad is
+                        <span class="section__header-link_dashed" style="cursor:default;color: red;">
+                            <span class="wrap">
+                            </span>
+                        </span>
+                    </h2>
+                </div>
+                <div class="section_header_para">
+                  <h5>
+                    A set of power-packed features that enhances your team management
+                    system.
+                  </h5>
+                </div>
+                <div class="boards-carousel">
+    <div class="boards-carousel__item" data-typed="sales">
+        <div class="boards-carousel__wrapper">
+            <div class="boards-carousel__img">
+                <img alt="Account Management" height="1962" loading="lazy" src="img/undraw_software_engineer_lvl5.svg" width="3036">
+            </div>
+          
+        </div>
+    </div>
+    <div class="boards-carousel__item" data-typed="development">
+        <div class="boards-carousel__wrapper">
+            <div class="boards-carousel__img">
+                <img alt="Sprints and Backlog" height="1962" loading="lazy" src="img/dash.svg" width="3036">
+            </div>
+           
+        </div>
+    </div>
+    <div class="boards-carousel__item" data-typed="projects">
+        <div class="boards-carousel__wrapper">
+            <div class="boards-carousel__img">
+                <img alt="Portfolios" height="1962" loading="lazy" src="img/undraw_collaborators_prrw.svg" width="3036">
+            </div>
+           
+        </div>
+    </div>
+    <div class="boards-carousel__item" data-typed="people">
+        <div class="boards-carousel__wrapper">
+            <div class="boards-carousel__img">
+                <img alt="People" height="1962" loading="lazy" src="img/undraw_personal_finance_tqcd.svg" width="3036">
+            </div>
+            <div class="template__component">
+                <a class="btn btn_v2" href="https://app.clickup.com/signup?template=t-4404185" target="_blank">
+                    Use template
+                </a>
+                <a class="btn btn_v2 btn_v2-white" href="templates.html">
+                    See more templates
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="boards-carousel__item" data-typed="resource">
+        <div class="boards-carousel__wrapper">
+            <div class="boards-carousel__img">
+                <img alt="Facility Management" height="1962" loading="lazy" src="img/undraw_software_engineer_lvl5.svg" width="3036">
+            </div>
+         
+        </div>
+    </div>
+    <div class="boards-carousel__item" data-typed="roadmaps">
+        <div class="boards-carousel__wrapper">
+            <div class="boards-carousel__img">
+                <img alt="Roadmap" height="1308" loading="lazy" src="img/undraw_Winter_olympics_p07j.svg" width="2024">
+            </div>
+           
+        </div>
+    </div>
+    <div class="boards-carousel__item" data-typed="docs">
+        <div class="boards-carousel__wrapper">
+            <div class="boards-carousel__img">
+                <img alt="Docs" height="1420" loading="lazy" src="img/dashes.svg" width="2048">
+            </div>
+           
+        </div>
+    </div>
+    <div class="boards-carousel__item" data-typed="spreadsheets">
+        <div class="boards-carousel__wrapper">
+            <div class="boards-carousel__img">
+                <img alt="Spreadsheet" height="2130" loading="lazy" src="img/data.svg" width="3072">
+            </div>
+          
+        </div>
+    </div>
+    <div class="boards-carousel__item" data-typed="everything">
+        <div class="boards-carousel__wrapper">
+            <div class="boards-carousel__img">
+                <img alt="Everything" height="2130" loading="lazy" src="img/designation.svg" width="3072">
+            </div>
+         
+        </div>
+    </div>
+    </div>
+    
+            </div>
+        </div>
+        </div>
+      </div> 
+
+
+
+
 
       <!-- <div class="swiper_index" data-aos="fade-up">
         <div class="container">
@@ -2771,7 +3264,7 @@
       <div class='scrolltop float-right'>
         <img src="img/up-arrow (1).svg" onclick='topFunction()' id='mybtn'></i>
     </div>
-    </div>
+         </div>
 
     <div
       class="modal fade"
@@ -2890,6 +3383,59 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="sliders/js/jwgSlider.min.js"></script>
 
+    <script src="script/js/app.min.0220fa03.js">
+    </script>
+    <script src="script/js/typed.min.js">
+    </script>
+    <!-- <script src="js/jquery.exitintent.js"></script> -->
+    <script>
+        $(document).ready(function () {
+
+          var _slick =  $('.boards-carousel');
+
+          _slick.slick({
+            infinite: true,
+            arrows: false,
+            dots: false,
+            centerMode: true,
+            centerPadding: '0',
+            slidesToShow: 1,
+            keyboard: true,
+            slidesToScroll: 1,
+            focusOnSelect: true,
+            responsive: [
+              {
+                breakpoint: 600,
+                settings: {
+                  centerMode: false,
+                }
+              }
+            ]
+          });
+
+          var stringArray = ["leos", "customizable.", "awesome.", "beautiful.", "wonderful.", "khatra.", "dami.", "everything."];
+
+          var typed = new Typed('.section__header-link_dashed .wrap', {
+            strings: stringArray,
+            typeSpeed: 150,
+            backSpeed: 100,
+            startDelay:100,
+            loop: true,
+            cursorChar: '',
+            onStringTyped: (arrayPos, self) => {
+              var _slick =  $('.boards-carousel');
+              _slick.slick("slickGoTo", arrayPos);
+            },
+          });
+
+          _slick.find('.slick-arrow, .slick-slide , .slick-dots li').on("click", function() {
+            var currentSlide = _slick.slick('slickCurrentSlide');
+            typed.stop();
+            $('.section__header-link_dashed .wrap').html(stringArray[currentSlide]);
+          });
+    });
+    </script>
+
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
@@ -2981,27 +3527,28 @@
      }); 
 </script>
 
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
     gsap.timeline({
       scrollTrigger: {
-          trigger: ".third_section_starts",
+          trigger: ".black_bg",
           start: "center center",
           end: "bottom top",
-          ease: "power2",
           scrub: true,
           pin: true
       }
   })
-  .to(".third_section_starts", { backgroundColor: "white", })
-  .to(".amod_title", {color : "black",})
-  .from(".responsive1", {x : innerWidth * 4})
-  .from(".responsive2", {x : innerWidth * 4})
-  .from(".responsive3", {x : innerWidth * 4})
-  .from(".responsive4", {x : innerWidth * -4})
-  .from(".responsive5", {x : innerWidth * -4})
-  .from(".responsive6", {x : innerWidth * -4})
+  .to(".black_bg", 7, { 
+    backgroundColor: "white",
+    delay: 6,
+  })
+
+  .to(".blackbg", {
+    color : "black",
+  }) 
   
-  </script> -->
+  </script>
+
+
 
 
     <script>
